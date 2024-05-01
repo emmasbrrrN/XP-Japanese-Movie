@@ -44,6 +44,7 @@ function getData() {
         articleContainer.insertAdjacentHTML("beforeend", articleElement);
       });
 
+
       let auteurs= document.getElementById("auteurs");
       data.journal.auteurs.forEach((element) => {
         let auteursElement = `<article>
@@ -55,6 +56,20 @@ function getData() {
 
         auteurs.insertAdjacentHTML("beforeend", auteursElement);
       });
+
+      let themefooter = document.getElementById("themefooter");
+data.journal.themes.forEach((element) => {
+  let themefooterElement = `<div> <h3> ${element.nom} </h3>
+  <p>
+  ${element.description}
+    
+  </p>
+</div>`
+;
+themefooter.insertAdjacentHTML("beforeend", themefooterElement);
+
+
+});
 
 
       console.log(articleContainer);
