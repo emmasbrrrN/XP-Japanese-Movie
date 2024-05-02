@@ -56,7 +56,9 @@ function afficerArticle(){
 </article>`;
         articleContainer.insertAdjacentHTML("beforeend", articleElement);
       });
+}
 
+function afficherAuteurs(){
 
       let auteurs= document.getElementById("auteurs");
       data.journal.auteurs.forEach((element) => {
@@ -69,7 +71,8 @@ function afficerArticle(){
 
         auteurs.insertAdjacentHTML("beforeend", auteursElement);
       });
-
+}
+   function afficherThemefooter(){
       let themefooter = document.getElementById("themefooter");
 data.journal.themes.forEach((element) => {
   let themefooterElement = `<div> <h3> ${element.nom} </h3>
@@ -83,7 +86,7 @@ themefooter.insertAdjacentHTML("beforeend", themefooterElement);
 
 
 });
-
+}
 
       console.log(articleContainer);
       console.log(article);
@@ -92,8 +95,9 @@ themefooter.insertAdjacentHTML("beforeend", themefooterElement);
       
       articleprince();
       navthemes();
-
-
+      afficerArticle();
+      afficherAuteurs();
+      afficherThemefooter();
      
       /// FIN DU CODE
     })
