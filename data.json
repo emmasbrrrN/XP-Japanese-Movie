@@ -2,7 +2,7 @@
     "journal": {
       "nomJournal": "CinéExpérimental Japonais",
       "phraseAccroche": "Le site d'actualité dédié au cinéma expérimental japonais",
-      "texteAppelAction": "Rejoignez notre newsletter pour ne rien manquer !",
+      "texteAppelAction": "Rejoignez notre newsletter",
       "articlePrincipal": {
         "titre": "Exploration de l'avant-garde cinématographique japonaise",
         "description": "Découvrez les dernières tendances et les réalisateurs émergents de la scène cinématographique expérimentale japonaise.",
@@ -16,25 +16,25 @@
           "titre": "Rencontre avec le réalisateur Hiroshi Teshigahara : entre tradition et expérimentation",
           "date": "15 Avril 2024",
           "theme": "Interview",
-          "image":""
+          "image":"img xp jp/12010-hiroshi-teshigahara.jpg"
         },
         {
           "titre": "Exploration des thèmes de l'identité dans le cinéma expérimental japonais contemporain",
           "date": "5 Avril 2024",
           "theme": "Analyse",
-          "image":""
+          "image":"img xp jp/cache_cache_pastoral.jpg"
         },
         {
           "titre": "Festival de cinéma expérimental à Tokyo : une célébration de l'innovation cinématographique",
           "date": "28 Mars 2024",
           "theme": "Événement",
-          "image":""
+          "image":"img xp jp/rs=w 2320.webp"
         },
         {
           "titre": "Les œuvres méconnues de la Nouvelle Vague japonaise",
           "date": "20 Mars 2024",
           "theme": "Découverte",
-          "image":""
+          "image":"img xp jp/106870_img2359.webp"
         }
       ],
       "themes": [
@@ -61,19 +61,23 @@
       ],
       "auteurs": [
         {
-          "prenom": "Yumi",
+          "prenom": "Yumi Tsuba",
           "typeExperience": "Expert en cinéma expérimental",
-          "presentation": "Passionnée par l'innovation cinématographique, je suis constamment à la recherche de nouveaux talents et de nouvelles tendances dans le monde du cinéma expérimental japonais."
-        },
+          "presentation": "Passionnée par l'innovation cinématographique, je suis constamment à la recherche de nouveaux talents et de nouvelles tendances dans le monde du cinéma expérimental japonais.",
+          "image":""
+
+        }, 
         {
-          "prenom": "Takashi",
+          "prenom": "Joshua Dila",
           "typeExperience": "Critique de cinéma",
-          "presentation": "J'explore les nuances artistiques et les implications culturelles du cinéma expérimental japonais à travers mes critiques et mes analyses approfondies."
+          "presentation": "J'explore les nuances artistiques et les implications culturelles du cinéma expérimental japonais à travers mes critiques et mes analyses approfondies.",
+          "image":""
         },
         {
-          "prenom": "Airi",
+          "prenom": "Airi Coolman",
           "typeExperience": "Étudiante en cinéma",
-          "presentation": "En tant qu'étudiante passionnée de cinéma, je partage mes découvertes et mes réflexions sur le cinéma expérimental japonais, en mettant l'accent sur les perspectives nouvelles et audacieuses."
+          "presentation": "En tant qu'étudiante passionnée de cinéma, je partage mes découvertes et mes réflexions sur le cinéma expérimental japonais, en mettant l'accent sur les perspectives nouvelles et audacieuses.",
+          "image":""
         }
       ]
     }

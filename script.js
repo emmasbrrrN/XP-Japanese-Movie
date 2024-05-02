@@ -10,17 +10,27 @@ function getData() {
       // Traitez les données comme vous le souhaitez
       console.log("Données récupérées du fichier JSON :", data);
       /// ON ECRIT LE CODE ICI !
+   
+   
+      function navthemes(){
+    let themes = data.journal.themes;
 
-      let nomJournal = data.journal.nomJournal;
-      let article = data.journal.articles;
-      let themes = data.journal.themes;
-
-      let navTheme = document.getElementById("navTheme");
+    
       themes.forEach((element) => {
         let themeElement = `<li>${element.nom}</li>`;
+        let navTheme = document.getElementById("navTheme");
         navTheme.insertAdjacentHTML("beforeend", themeElement);
       });
 
+
+   }
+   navthemes();
+
+
+      let nomJournal = data.journal.nomJournal;
+      let article = data.journal.articles;
+      
+  
       let articlePrincipal = data.journal.articlePrincipal;
       console.log(articlePrincipal);
 
@@ -37,7 +47,8 @@ function getData() {
       let articleContainer = document.getElementById("articleContainer");
       data.journal.articles.forEach((element) => {
         let articleElement = ` <article><h1> ${element.titre} </h1>
-<img src=" " alt="">
+        <div> <article> <img src=" ${element.image} " alt="image"> </article> </div>
+
 <h3>${element.theme} - ${element.date} </h3>
 <button> lire l' article </button>
 </article>`;
@@ -75,8 +86,9 @@ themefooter.insertAdjacentHTML("beforeend", themefooterElement);
       console.log(articleContainer);
       console.log(article);
       console.log(nomJournal);
-      console.log(themes);
-
+      //console.log(themes);
+      
+     
       /// FIN DU CODE
     })
     .catch((error) =>
