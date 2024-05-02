@@ -24,26 +24,28 @@ function getData() {
 
 
    }
-   navthemes();
+
 
 
       let nomJournal = data.journal.nomJournal;
       let article = data.journal.articles;
       
+      function articleprince(){
+       let articlePrincipal = data.journal.articlePrincipal;
   
-      let articlePrincipal = data.journal.articlePrincipal;
-      console.log(articlePrincipal);
-
+       
       let articleprincipalElement = document.getElementById("articlePrincipal");
       let articleprincipalElementJunior = ` <H1>${articlePrincipal.titre}</H1>
  <H3>${articlePrincipal.theme} - ${articlePrincipal.date}</H3>
 <p>${articlePrincipal.description}</p>
-<button>uss</button>`;
+<button>lire l' article</button>`;
       articleprincipalElement.insertAdjacentHTML(
         "beforeend",
         articleprincipalElementJunior
-      );
+      ); 
+    }
 
+function afficerArticle(){
       let articleContainer = document.getElementById("articleContainer");
       data.journal.articles.forEach((element) => {
         let articleElement = ` <article><h1> ${element.titre} </h1>
@@ -88,6 +90,10 @@ themefooter.insertAdjacentHTML("beforeend", themefooterElement);
       console.log(nomJournal);
       //console.log(themes);
       
+      articleprince();
+      navthemes();
+
+
      
       /// FIN DU CODE
     })
