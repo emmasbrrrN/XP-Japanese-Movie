@@ -88,6 +88,8 @@ themefooter.insertAdjacentHTML("beforeend", themefooterElement);
 });
 }
 
+
+
       console.log(articleContainer);
       console.log(article);
       console.log(nomJournal);

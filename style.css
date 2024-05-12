@@ -108,8 +108,13 @@ nav a { border-radius: 5px;
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
- 
+   align-content: space-between;
+   flex-direction: row;
+   align-items: baseline;
+   margin-top: 20px;
+   margin-bottom: 30px;
 }
+
 #articlePrincipal button {
    padding: 10px 20px;
    background-color: #2a2725;
@@ -125,11 +130,13 @@ nav a { border-radius: 5px;
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
+   margin-top: 20px;
+   margin-bottom: 30px;
  }
  article {
   width: calc(33.33% - 20px);
   margin-bottom: 20px;
-  background-color: grey;
+  background-color: rgb(218, 218, 218);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -171,32 +178,36 @@ article .content {
 
 
 
-article button {
-  padding: 8px 16px;
-  background-color: black;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: bold;
-  border-radius: 5px;
-  transition: background-color 0.3s ease-in-out;
-  margin-top: 20px;
+#articleContainer article button {
+   position: absolute;
+   bottom: 20px; /* Positionne le bouton au bas de chaque article */
+   left: 50%;
+   transform: translateX(-50%);
+   padding: 8px 16px;
+   background-color: black;
+   color: #fff;
+   border: none;
+   cursor: pointer;
+   font-size: 14px;
+   font-weight: bold;
+   border-radius: 5px;
+   transition: background-color 0.3s ease-in-out;
 }
 
-article button:hover {
-  background-color: #cc3700;
-}
 
 #auteurs {
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
+   align-items: flex-start;
+   gap: 20px;
  }
  
  #auteurs article {
    width: calc(50% - 10px);
    margin-bottom: 20px;
+   border-radius: 10px;
+   padding: 20px;
  }
  
  #auteurs img {
@@ -204,12 +215,10 @@ article button:hover {
    border-radius: 15px;
    object-fit: cover;
     border: black solid 3px;
+    margin-bottom: 10px;
  }
 
-#auteurs.content{
-   padding: 20px;
-   flex: 2;
-}
+
  #auteurs h3 {
    font-size: 16px;
    font-weight: bold;
@@ -236,5 +245,18 @@ footer{
     gap: 10px;
     margin: 0;
     padding: 0;
+}
+
+#themefooter li {
+   display: flex;
+   justify-content: center;
+
+}
+
+
+
+footer p {
+   display: flex;
+   justify-content: space-around;
 }
  
