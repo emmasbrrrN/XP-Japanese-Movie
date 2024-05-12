@@ -45,7 +45,7 @@ function getData() {
       ); 
     }
 
-function afficerArticle(){
+function afficherArticle(){
       let articleContainer = document.getElementById("articleContainer");
       data.journal.articles.forEach((element) => {
         let articleElement = ` <article><h1> ${element.titre} </h1>
@@ -63,7 +63,7 @@ function afficherAuteurs(){
       let auteurs= document.getElementById("auteurs");
       data.journal.auteurs.forEach((element) => {
         let auteursElement = `<article>
-        <img src="" alt="" />
+        <img src="${element.image} " alt="avatar" />
         <h3> ${element.prenom} - ${element.typeExperience} </h3>
         <p> ${element.presentation} </p>
       </article>`
@@ -95,7 +95,7 @@ themefooter.insertAdjacentHTML("beforeend", themefooterElement);
       
       articleprince();
       navthemes();
-      afficerArticle();
+      afficherArticle();
       afficherAuteurs();
       afficherThemefooter();
      

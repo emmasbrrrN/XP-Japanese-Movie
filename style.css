@@ -1,24 +1,37 @@
+body{
+   font-family: 'Ysabeau',sans-serif;
+}
+
 nav{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: baseline;
     background:grey;
+    padding-bottom: 3mm;
+ }
+ #navTheme li {
+   display: inline-block;
+   margin-right: 20px;
+   font-size: 16px;
+   font-weight: bold;
+   color: #333;
+   text-transform: uppercase;
+   cursor: pointer;
+ }
+ 
+ #navTheme li:hover {
+   color: black; color:whitesmoke/* Couleur au survol */
  }
  .logo{
     display: flex;
     justify-content: start;
+    margin-top: 3mm;
  }
  .logo img{
     width: 100px;
-    border-radius: 100px;
- }
- .logo h4{
-    display: flex;
-    margin: 0;
-    align-items: center;
-    text-decoration: gold;
-    font-size: large;
- }
+    border-radius: 50px;
+
+}
  ul{
     display: flex;
     gap: 30px;
@@ -34,15 +47,15 @@ nav{
     text-decoration: none;
     color: black;
  }
- .avatar{
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 100%;
-    border: black solid 3px;
+ 
+ h2{
+   display: flex;
+   margin-top: 3mm;
+   text-align: center;
+    margin-top: 3mm;
+    flex-direction: column-reverse;
+    justify-content: space-around;
  }
- 
- 
 .imagenav {
    width: 100%;
    height: 100%;
@@ -54,12 +67,154 @@ nav{
     text-decoration: none;
     padding: 8px 12px;
     transition: all .4s ease-in-out;
+    background-color: #2a2725;
 }
-.button.primary{
-       background: black;
-       color: white;
-       border: 2px solid black;
+
+nav a { border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
+
+#main{
+     background-color: whitesmoke;
+    }
+
+
+header img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+#articlePrincipal button {
+   padding: 10px 20px;
+   background-color: #2a2725;
+   color: #fff;
+   border: none;
+   cursor: pointer;
+   font-size: 16px;
+   font-weight: bold;
+   border-radius: 5px;
+ }
+
+ #articleContainer {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+ }
+ article {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  background-color: grey;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+article h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  padding: 20px;
+  margin: 0;
+  flex: 1;
+}
+
+article h3 {
+  font-size: 14px;
+  color: #666;
+  padding: 0 20px;
+  margin-bottom: 10px;
+}
+
+article img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+article .content {
+   padding: 20px;
+   flex: 1;
+ }
+ 
+
+
+
+article button {
+  padding: 8px 16px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+article button:hover {
+  background-color: #cc3700;
+}
+
+#auteurs {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+ }
+ 
+ #auteurs article {
+   width: calc(50% - 10px);
+   margin-bottom: 20px;
+ }
+ 
+ #auteurs img {
+   width: 100px;
+   border-radius: 15px;
+   object-fit: cover;
+    border: black solid 3px;
+ }
+
+#auteurs.content{
+   padding: 20px;
+   flex: 2;
+}
+ #auteurs h3 {
+   font-size: 16px;
+   font-weight: bold;
+   color: #333;
+   margin-bottom: 10px;
+ }
+ 
+ #auteurs p {
+   font-size: 14px;
+   color: #666;
+   margin-bottom: 10px;
+  line-height: 1.6;
+ }
+
 footer{
-   background-color: green;
+   background-color: grey;
+}
+
+#themefooter {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+ 
+.news{
+   background:"img xp jp/texture3.jpg";
 }
